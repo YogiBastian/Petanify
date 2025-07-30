@@ -1,0 +1,220 @@
+/* forum-community.css */
+
+.forum-wrapper {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 0 18px;
+}
+
+.forum-main {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 28px #1551431c;
+    padding: 32px 28px;
+    margin-bottom: 40px;
+}
+
+.forum-post-form {
+    margin-bottom: 28px;
+}
+
+.forum-post-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.forum-post-input textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.1em;
+    padding: 6px;
+    font-family: inherit;
+    resize: none;
+    min-height: 32px;
+}
+
+.forum-post-input input[type="file"] {
+    margin-left: 4px;
+}
+
+.forum-post-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.35em;
+    color: #228B22;
+}
+
+.forum-post-action {
+    text-align: right;
+    margin-top: 7px;
+}
+
+.forum-btn {
+    background: #228B22;
+    color: #fff;
+    border: none;
+    padding: 9px 26px;
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.forum-btn:hover {
+    background: #155143;
+}
+
+.forum-btn-sm {
+    padding: 5px 12px;
+    font-size: 0.98em;
+}
+
+.forum-post-card {
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #15514315;
+    margin-bottom: 26px;
+    padding: 19px 18px;
+}
+
+.forum-post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 7px;
+}
+.forum-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffb40033;
+}
+.forum-time {
+    font-size: 0.9em;
+    color: #888;
+}
+.forum-post-body {
+    font-size: 1.15em;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    word-break: break-word;
+}
+.forum-img {
+    width: 90%;
+    max-width: 340px;
+    border-radius: 9px;
+    margin-top: 9px;
+    box-shadow: 0 2px 10px #15514325;
+}
+.forum-post-footer {
+    margin-bottom: 6px;
+}
+.forum-like-btn {
+    background: none;
+    border: none;
+    color: #155143;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.16s;
+}
+.forum-like-btn.liked {
+    color: #ffb400;
+}
+.forum-comments {
+    margin-top: 10px;
+}
+.forum-comment-form {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 7px;
+}
+.forum-comment-form input[type="text"] {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 6px 11px;
+    font-size: 1em;
+    outline: none;
+}
+.emoji-comment-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #228B22;
+}
+.forum-comment {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.forum-avatar-small {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ffb40044;
+}
+.forum-comment-content {
+    background: #eef9f2;
+    border-radius: 7px;
+    padding: 7px 11px;
+    font-size: 1em;
+    word-break: break-word;
+}
+.forum-comment-content b {
+    color: #155143;
+}
+@media (max-width: 700px) {
+    .forum-main {
+        padding: 16px 3vw;
+    }
+    .forum-wrapper {
+        padding: 0 3vw;
+    }
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: linear-gradient(90deg, #fd5b63 65%, #fdab2c 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 8px 22px 8px 18px;
+    border-radius: 22px;
+    box-shadow: 0 2px 10px rgba(253,91,99,0.08);
+    cursor: pointer;
+    transition: background 0.17s, box-shadow 0.15s, transform 0.13s;
+    outline: none;
+    letter-spacing: 0.5px;
+}
+.logout-btn i {
+    font-size: 1.22em;
+    margin-right: 2px;
+}
+.logout-btn:hover,
+.logout-btn:focus {
+    background: linear-gradient(90deg, #fb3341 60%, #ffb400 100%);
+    box-shadow: 0 4px 16px rgba(253,91,99,0.18);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
